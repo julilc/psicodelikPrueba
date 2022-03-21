@@ -1,0 +1,928 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Selectores de etiquetas */
+html {
+	font-size: 62.5%;
+	}
+	*{
+		font-family: 'Roboto', sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+body {
+	/*background-image: url('../src/img/fondo.png');*/
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	}
+/*HEADER*/
+	header{	background: rgba(240, 240, 240, 1);
+			}
+	body header {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+		body header nav div{
+			background: rgba(240, 240, 240, 1);
+			text-align: center;
+			
+		}
+		body header nav ul {
+			background: rgba(220, 220, 220, 0.5);
+			list-style: none;
+			text-align: center;
+			font-size: 0;
+			}
+			body header nav ul li {
+				display: inline-block;
+				margin-right: 5rem;
+				position: relative;
+				}
+				nav ul li a{
+					text-decoration: none;
+					color: black;
+					font-size: 2rem;
+					font-weight: 300;
+					line-height: 2.4rem;
+					
+					}
+.imgResponsive {
+width: 100%;
+height: auto;
+
+}
+
+
+/*body*/
+	body main {
+		margin-top: 2rem;
+	}
+
+		body main section{
+			/*background: rgba(0, 0, 0, 0.7);*/
+			background: rgba(255, 255, 255, 0.2);
+			padding: 2rem 3rem;
+			color: whitesmoke;
+			margin: 4rem 2rem;
+			padding: 1 rem;
+		}
+			body main section article {
+				display: flex;
+				flex-direction: row;
+				margin: 1 rem;
+				padding: 1 rem;
+				align-items: center;
+				line-height: 2.4rem;
+				}
+/*FOOTER*/		
+					
+		footer {
+			background: rgba(230, 230, 230, 0.4);
+			text-align: center;
+		}
+
+
+h1{
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 500;
+	color: whitesmoke;
+}
+h2 {
+	font-size: 3rem;
+	font-weight: 300;
+	color: whitesmoke;
+}
+h3{
+	font-size: 2rem;
+	font-weight: 300;
+} 
+
+
+/*Selectores de clase*/
+#mainIndex {
+	overflow-x: hidden;
+}
+.textAlignRight {
+	text-align: right;
+}
+
+.textCenter{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.videoMode {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	overflow-x: hidden;
+
+}
+
+
+
+.noMarginTop {
+	margin-top: 0rem;
+}
+.flechArriba {
+		display: block;
+		text-align: center;
+		margin-bottom: 1rem;
+		
+	}
+
+ .flechArribaMultimedia {
+ 	text-align: center;
+ 	margin-top: 1rem;
+ 	 }
+
+.titleMarginB {
+		margin-bottom: 2rem;
+	}
+
+/*Inicio*/
+
+	/*Grid*/
+	.gridIndex {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav" "main" "footer" ;
+
+	}
+
+		/*GridArea*/
+		#principio {
+			grid-area: nav;
+			}
+		#mainIndex {
+			grid-area: main;
+			overflow-y: hidden;
+		}
+		#footer {
+			grid-area: footer;
+		}
+
+.contenedor {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	}
+.textoEncima {
+	position: absolute;
+	top: 40%;
+	rigth: 60%;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 3rem ;
+	font-weight: 300 ;
+	max-width: 50%;
+	}
+/*Nosotros*/
+	/*Grid*/
+	.gridNosotros{
+		display: grid;
+		grid-template-columns:100%;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		 "nav"
+		 "main" 
+		 "footer";
+	}
+	/*Grid Areas*/
+	#principio{
+		grid-area: nav;
+	}
+	#nuosotrosMain{
+		grid-area: main;
+		max-width: 100%;
+	}
+		
+	#footer {
+		grid-area: footer;
+	}
+	/*Nuestra historia*/
+	.nuestraHistoriaText {
+		line-height: 4rem;
+		font-size: 2.3rem;
+		margin-right: 3rem;
+		
+	}
+	.divTaller{
+		width: 150%;
+		height: auto;
+	}
+	/*nosotros2*/
+	.nosotros2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		}
+	/*Fundadores*/
+	.fundadores{
+		 display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-around;
+		font-size: 2rem;
+		
+
+		}
+		.fundadoresFigure{
+			text-align: center;
+			margin: 3rem;
+			
+		}
+		.fundadoresNombres {
+			margin-bottom: 3rem;
+			font-size: 2.5rem;
+			
+		}
+		.fundadoresFrase {
+			margin-top: 3rem;
+			
+		}
+		.imgResponsive1{
+			height: 48rem;
+		}
+	/*Trabaja con Nosotros*/
+		.titleTrabajaNosotros {
+			font-size: 2.3rem;
+			font-weight: 300;
+			margin-bottom: 2rem;
+			
+			
+		}
+		.titleTrabajaNosotros2 {
+			font-size: 2.3rem;
+			font-weight: 300;
+			margin-bottom: 2rem;
+			
+		}
+
+		.articleTrabajaNosotros {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: stretch;
+			
+			}
+		.divTrabajaNosotros{
+			margin-bottom: 3rem;
+			font-size: 1.8rem;
+			font-weight: 300;
+			margin-top: 4rem;
+			text-align: left;
+			}
+		.divTrabajaNosotros2{
+			font-size: 1.8rem;
+			font-weight: 300;
+			text-align: left;
+			}
+		.ulTrabajaNosotros {
+			font-size: 1.8rem;
+			font-weight: 300;
+			list-style: none;
+			text-align: left;
+
+		}
+		.logoLinkedIn {
+			text-align: center;
+			margin: 5rem 0rem;
+
+		}
+/*LA GALERIA*/
+/*Grid*/
+.galeriaGrid {
+	display: Grid;
+	grid-template-columns: 85% 15%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav nav" 
+	"main aside" 
+	"footer footer" ;
+}
+	/*GridAreas*/
+	#principio {
+		grid-area: nav;
+	}	
+	#galeriaMain {
+		grid-area: main;
+
+	}
+	#galeriaAside {
+		grid-area: aside;
+		margin-top: 20rem;
+		width: 100%;	
+	}
+	#footer {
+		grid-area: footer;
+	}
+	.contenedorGaleriaRight {
+		padding: 3rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+
+	}
+	.divBar {
+		width: 290%;
+		height: auto;
+			}
+	.contenedorGaleriaLeft{
+		padding: 3rem;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	.divSalaP {
+		width: 290%;
+		height: auto;
+		
+	}
+	.laGaleriaText{
+		line-height: 4rem;
+		font-size: 2.2rem;
+		font-weight: 3rem;
+		margin: 3rem;
+
+	}
+	.bar {
+		width: 90%;
+		margin-right: 0rem;
+	}
+	
+	.laGaleriaTitleRight {
+		text-align: right;
+		margin-right: 9rem;
+	}
+	.laGaleriaTitleLeft {
+		margin-left: 5rem;
+	}
+	.textoDerecha {
+		width: 90%;
+		margin-right: 0rem;
+		text-align: right;
+		margin-right: 1rem;
+	}
+	.divSumergite {
+		width: 270%;
+		height: auto;
+	}
+	
+
+/*MULTIMEDIA*/
+/*Grid*/
+.gridMultimedia {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows:auto;
+	grid-template-areas: "nav" 
+	"main" "footer" ;
+	}
+	/*GridAreas*/
+	#principio {
+		grid-area: nav;
+	}
+	#mainMultimedia {
+		grid-area: main;
+	}
+	#footer {
+		grid-area: footer;
+	}
+	/*Fotos*/
+	.multimediaFotos {
+		display:flex;
+		flex-direction: row;
+		overflow-x: scroll;
+		text-align: left;
+		justify-content: space-between;
+		margin-top: 2rem;
+		}
+	.mFotos {
+		margin: 0rem 2rem;
+	}
+	/*Musica*/
+	
+	.multimediaMusica {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin-left: 10rem;
+		}
+	.multimediaPlaylist {
+		margin-left: 8rem;
+		text-align: center;
+
+	}
+	.musicaLogo {
+		margin: 1rem 1rem;
+	}
+	.playlistTitle{
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	
+	/*Los Artistas del Mes*/
+	.artistas{
+		display: inline-flex;
+		text-align: center;
+		flex-direction: row;
+		justify-content: left;
+		font-size: 2rem;
+		overflow-x: scroll;
+		margin-top: 1.5rem;
+		}
+	.artistasFigure {
+		margin-right: 2rem;
+	}
+	.artistasNombre {
+		margin-bottom: 2rem;
+	}
+
+/*INFO UTIL*/
+	/*Grid*/
+	.contenedorGridInfoUtil {
+
+		display: grid;
+		grid-template-columns:85% 15%;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		
+		"nav nav "
+		"main aside"
+		"footer footer";
+		
+		}
+		/*Grid Areas*/
+		
+		#nav {
+			grid-area: nav;
+		}
+
+		#infoUMain{
+			grid-area: main;
+		}
+		#aside {
+			grid-area: aside;
+		}
+		#footer {
+			grid-area: footer;
+		}
+
+	
+	/*Talleres u cursos disponibles*/
+	.infoUtil1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		}
+	.infoCursos {
+	 display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin: 3.7rem 5.7rem;
+		
+	}
+	.cursos {
+		margin: 0rem 5rem;
+		font-size: 2rem;
+	}
+	/*Donde Encontrarnos*/
+	.dondeEncontrarnos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin-top: 4rem;
+		}
+	.horarios {
+		font-size: 2rem;
+		margin-left: 5rem;
+		widows: 100%;
+		}
+	.listHorarios {
+		list-style: none;
+	}
+	.calendario {
+		width: 50%;
+	}
+	.asideMuestras {
+		display: flex;
+
+	}
+	.divMap {
+	width: 100%;
+	height: 40rem;
+	}
+	.mapa{
+	width: 100%;
+	height: 40rem;
+	}
+	
+
+/*CONTACTO*/
+/*Grid*/
+.contactoGrid {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav"
+	"main"
+	"footer";
+	}
+	/*gridAreas*/ 
+	#principio{
+		grid-area: nav;
+	}
+	#mainContacto {
+		grid-area: main;
+		height: auto;
+	}
+	#footer {
+		grid-area: footer;
+	}
+	/*Formulario de contacto*/
+	input, label {
+		display: block;
+	}
+	.formularioContacto {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 1rem;
+		margin: 1rem;
+		font-size: 1.8rem;
+		font-weight: 300;
+	}
+	.formStyle {
+		border-style: solid;
+		border-width: 0.7rem;
+		border-color: #6AC7B0;
+	}
+	.formularioContacto input{
+			display: inline-block;
+			font-size: 1.5rem;
+			}
+	#Comentarios {margin: 1rem 0.7rem;}
+	/*Redes*/
+
+	.redes {
+		margin: 5rem;
+		text-align: center;
+	}
+	.redes a {
+		margin: 0rem 3rem;
+	}
+
+
+
+@media screen and (max-width: 1024px) /*desktop*/ {
+
+/*GENERAL*/
+aside {
+	display: none;
+}
+
+/*NOSOTROS*/
+
+.contenedorNuestraHistoria {
+	display: flex;
+	flex-direction: column;
+
+}
+.divTaller {
+	width: 100%;
+	height: auto;
+}
+
+/*GALERIA*/
+.galeriaGrid 
+{grid-template-columns: 100%;
+grid-template-areas: 	
+"nav"
+"main"
+"footer";}
+
+
+
+	.contenedorGaleriaRight {
+		position: relative;
+		overflow-x: hide;
+		padding: 3rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.divBar {
+		width: 100%;
+		height: auto;
+			}
+	.contenedorGaleriaLeft{
+		position: relative;
+		overflow-x: hide;
+		padding: 3rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;	
+	}
+	.divSalaP {
+		width: 100%;
+		height: auto;
+	}
+	.divSumergite {
+		width: 100%;
+		height: auto;
+	}
+
+/*INFO UTIL*/
+.contenedorGridInfoUtil {
+	grid-template-columns: 100%;
+	grid-template-areas: 
+	"nav"
+	"main"
+	"footer";
+}
+.infoUtil1 {
+	flex-direction: column;
+}
+.infoUtil1 h2 {
+	text-align: center;
+}
+.calendario {
+	width: 100%;
+	height: auto;
+}
+#calendario {
+	width: 100%;
+	height: 100%;
+}
+.infoUtil2 h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.dondeEncontrarnos {
+	flex-direction: column;
+}
+.horarios {
+	margin-top: 2rem;
+}
+/*CONTACTO*/
+#mainContacto h2 {
+	text-align: center;
+}
+
+}
+@media screen and (max-width: 624px) /*tablet*/ {
+/*GENERAL*/
+aside {
+	display: none;
+}
+/*INICIO*/
+.textoEncima {
+	right: 40%;
+	text-align:left ;
+}
+/*NOSOTROS*/
+#nosotros624px {
+	display: none;
+}
+.fundadores {
+	display: flex;
+	flex-direction: column;
+}
+#trabaja1 {
+	display: none;
+}
+.logoLinkedIn {
+	margin: 1rem;
+}
+.titleTrabajaNosotros2 { 
+display: none; }
+
+/*MULTIMEDIA*/
+.titleMarginB {
+	text-align: center;
+}
+.multimediaMusica {
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 1rem;
+}
+#MUSICA {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	align-content: center;
+}
+.multimediaPlaylist {
+		margin-left: 0rem;
+		text-align: center;
+
+	}
+.reproductor {
+	width: 100%;
+}
+
+
+/*LA GALERIA*/
+.galeriaGrid 
+{grid-template-columns: 100%;
+grid-template-areas: 	
+"nav"
+"main"
+"footer";}
+/*Articles*/
+	.galeriaGrid article {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	
+	.contenedorGaleriaRight {
+		position: relative;
+		overflow-x: hide;
+		padding: 0rem;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+	}
+	.bar {
+		widows: 100%;
+		height: 100%;
+	}
+	.divBar{
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.textoGaleria {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: inline-flex;
+		align-items: center;
+		width: 50%;
+		height: 100%;
+		margin: 50%;
+		
+		}
+	
+	.laGaleriaText {display: none;}
+	.contenedorGaleriaLeft{
+		position: relative;
+		overflow-x: hide;
+		padding: 0rem;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;	
+	}
+	.flechArriba {
+		display: none;
+	}
+	.flechArribaMobile {
+		display: block;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 520px) /*mobile*/{
+/*GENERAL*/
+aside {display: none;}
+/*LA GALERIA*/
+.galeriaGrid 
+{grid-template-columns: 100%;
+grid-template-areas: 	
+"nav"
+"main"
+"footer";}
+/*Articles*/
+	.galeriaGrid article {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
+	
+	.contenedorGaleriaRight {
+		position: relative;
+		overflow-x: hide;
+		padding: 0rem;
+		display: flex;
+		align-items: center;
+		width: 
+
+	}
+	.bar {
+		widows: 100%;
+		height: 100%;
+	}
+	.divBar{
+		width: 100%;
+		height: auto;
+		
+	}
+
+	.textoGaleria {
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: inline-flex;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		margin: 0%;
+		
+		}
+	
+	.laGaleriaText {display: none;}
+	.contenedorGaleriaLeft{
+		position: relative;
+		overflow-x: hide;
+		padding: 0rem;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;	
+	}
+/*INFO UTIL*/
+.cursos {
+margin: 3rem 3rem;
+}
+/*CONTACTO*/
+.formularioContacto {
+		font-size: 3rem;
+	}
+#Comentarios {
+	width: 90%;
+}
+}
+@media screen and (max-width: 380px) /*fold*/{
+/*INICIO*/
+#titleNuestraHistoria {
+	text-align: center;
+}
+
+/*NOSOTROS*/
+#nosotrosFull {
+	display: none;
+}
+#nosotros320px {
+	text-align: left;
+}
+/*MULTIMEDIA*/
+#reproductor {
+	display: none;
+}
+.playlistTitle {
+	display: none;
+}
+/*CONTACTO*/
+#mainContacto {
+	width: 100%;
+
+}
+.formularioContacto{
+	text-align: center;
+	font-size: 3.5rem;
+	width: 80%;
+	
+
+	
+}
+.formularioContacto input {
+width: 100%;
+height: 3.5rem;
+
+}
+.formularioContacto select {
+width: 100%;
+height: 3.5rem;
+}
+#mainContacto h2{
+	font-size: 3.7rem;
+}
+.formStyle {
+	width: 100%;
+}
+#Comentarios {
+	width: 100%;
+}
+
+}
+
