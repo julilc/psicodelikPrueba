@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PSICODELIK CONTACTO</title>
+	<link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+<div class="contactoGrid">
+<!------------------------------ HEADER -------------------->
+	<header id="principio">
+	<nav>
+		<div id="title">
+		<a href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
+		</div>
+		<ul> 
+			<li><a href="nosotros.html">NOSOTROS</a></li>
+			<li><a href="la_galeria.html">LA GALERIA</a></li>
+			<li><a href="multimedia.html">MULTIMEDIA</a></li>
+			<li><a href="informacion_util.html">INFO UTIL</a></li>
+			<li><a href="contacto.html">CONTACTO</a></li>
+		</ul>
+	</nav>	
+	</header>
+	
+<!------------------------------ MAIN ----------------------->
+
+	<main id="mainContacto">
+		<h1>CONTACTO</h1>
+		<!--------------------- FORMULARIO ----------------->
+		<section>
+			<h2>¿Alguna duda? Completa el formulario y nos contactaremos a la brevedad</h2>
+
+			<form class="formularioContacto" action="envio.php" method="post">
+				<div>
+					<fieldset class="formStyle">
+						<legend>Datos personales</legend>
+							<label for="Nombre">Nombre y apelllido
+							</label>
+							<input type="text" placeholder="Pepe Rodriguez" name="Nombre" id="Nombre">
+
+							<label for="Localidad">Localidad</label>
+							<select name="Localidad" id="Localidad">
+								<option value="Seleccionar"> Seleccionar</option>
+								<option value="Buenos Aires"> Buenos Aires</option>
+								<option value="CABA">CABA</option>
+								<option value="Catamarca">Catamarca</option>
+								<option value="Chaco">Chaco</option>
+								<option value="Chubut">Chubut</option>
+								<option value="Córdoba">Cordoba</option>
+								<option value="Corrientes">Corrientes</option>
+								<option value="Entre Rios">Entre Rios</option>
+								<option value="Formosa">Formosa</option>
+								<option value="Jujuy">Jujuy</option>
+								<option value="La Pampa">La Pampa</option>
+								<option value="La Rioja">La Rioja</option>
+								<option value="Mendoza">Menodoza</option>
+								<option value="Misiones">Misiones</option>
+								<option value="Neuquen">Neuquen</option>
+								<option value="Rio Negro">Rio Negro</option>
+								<option value="Salta">Salta</option>
+								<option value="San Juan">San Juan</option>
+								<option value="San Luis">San Luis</option>
+								<option value="Santa Cruz">Santa Cruz</option>
+								<option value="Santa Fe">Santa Fe</option>
+								<option value="Santiago del Estero">Santiago del Estero</option>
+								<option value="Tierra del Fuego, Antartida e Islas del Atlantico Sur">Tierra del Fuego, Antartida e Islas del Atlantico Sur</option>
+								<option value="Tucuman">Tucuman</option>
+								<option value="Exterior">Exterior del pais</option>
+							</select>
+
+							<label for="Celular"> Celular</label>
+							<input type="tel" placeholder="+55 (555) 555-5555" name="Celular" id="Celular">
+
+							<label for="Email"> Email</label>
+							<input type="email" placeholder="xxxx@mail.com" name="Emai" id="Email">
+					</fieldset>
+
+					<fieldset class="formStyle">
+						<legend>¿Quisieras recibir novedades acerca de la galería y sus cursos?</legend>
+							<label for="Si">SI</label>
+							<input type="radio" name="recomendaciones" id="recomendaciones">
+							<Label for="No">NO</Label>
+							<input type="radio" name="recomendaciones" id="recomendaciones">
+							
+					</fieldset>
+				</div>
+				<div>
+					<fieldset class="formStyle">
+						<legend>Comentarios</legend>
+						<label for="Comentarios"></label>
+						<textarea name="Comentarios" id="Comentarios" cols="72" rows="10"></textarea>
+					</fieldset>
+					<div class="textCenter">
+						<input type="Reset" value="Cancelar">
+						<input type="Submit" name="Enviar">
+					</div>
+				</div>
+			</form>
+
+			<!-------------------- REDES ------------------>
+		
+			<div>
+					<h2 class="textCenter">Seguinos en nuestras redes</h2>
+				<div class="redes">
+				<a href="https://www.facebook.com/" target="_blank">
+					<img src="src\img\face.png"width="70PX" height="70PX" alt="logo Facebook con enlace">
+				</a>
+				<a href="https://www.instagram.com/" target="_blank">
+					<img src="src\img\insta.png"width="70PX" height="70PX" alt="logo instagram con enlace">
+				</a>
+				<a href="https://twitter.com/" target="_blank">
+					<img src="src\img\twit.png"width="70PX" height="70PX" alt="logo Twitter con enlace">
+				</a>
+				<a href="https://www.youtube.com/" target="_blank">
+					<img src="src\img\youtube.png"width="80PX" height="60PX" alt="logo youtube con enlace">
+				</a>
+				<a href="https://www.spotify.com/ar/" target="_blank">
+					<img src="src\img\spoty.png" width="90PX" height="70PX" alt="logo spotify con enlace">
+				</a>
+				</div>
+			</div>
+		
+		</section>
+
+	</main>
+
+<!------------------------- FOOTER -------------------------->
+	<footer id="footer">
+		<a href="index.html">
+			<img src="src\img\psicodelik.png" width="100PX" height="20PX" alt="logo Psicodelik para volver al inicio">
+		</a>
+	</footer>
+</div>
+</body>
+</html>
