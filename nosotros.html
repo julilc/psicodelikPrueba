@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nosotros</title>
 	<link rel="stylesheet" href="CSS\style.css">
+	<link rel="stylesheet" href="CSS\animate.css">
+	
 </head>
 
 <body>
@@ -28,13 +30,13 @@
 	<!------------------------Nosotros-------------------->	
 	<main id="nosotrosMain"> <h1>NOSOTROS</h1>
 		<!---------------Nuestra Historia-------------------->
-		<section id="nuestraHistoria">
+		<section id="nuestraHistoria" class="fondo">
 			<h2 id="titleNuestraHistoria">NUESTRA HISTORIA</h2>
 			<article class= "contenedorNuestraHistoria"> 
 				<div class="nuestraHistoriaText"><h3><p id="nosotrosFull">Somos una familia que desde principios del año 2000 comenzó con una idea un poco loca para muchos, pero para nosotros era un sueño, un proyecto que no nos iba a dejar dormir hasta terminarlo: crear una galeria psicodélica.</p>
 				<p id="nosotros624px"> Así fue que los tres: Juli, Manu y Fede, empezamos a construir dentro de nuestra casa un espacio donde se pueda pintar y expresar libremente a través del arte psicodélico. Entendemos que lo psicodélico abre partes que el ser humano no podría percibirlas de no ser por sumergirse en un espacio dedicado todalmente a eso, con musica, colores, luces y ambiente que inducen a la persona a liberarse a tráves del arte.</p><div id="nosotros320px"><p > Creamos la primer galeria psicodelica de la ciudad</p></div></h3>
 				</div>
-			<div class="divTaller">
+			<div class="divTaller  wow fadeInRight" data-wow-delay="0.3s">
 				<img class="imgResponsive" src="src\img\taller1.jpg" alt="imagen taller">
 			</div>
 			</article>
@@ -42,22 +44,22 @@
 		<!---------------Nuestros Fundadores----------------->
 		
 			<div>
-			<section id="nuestrosFundadores" class="textCenter" >
+			<section id="nuestrosFundadores" class=" fondo2 textCenter" >
 				<h2>NUESTROS FUNDADORES</h2>
 				<article class="fundadores">
 						<figure class="fundadoresFigure imgResponsive">
 							<figcaption class="fundadoresNombres">Fede</figcaption>
-							<img src="src\img\pintor1.jpg" class="imgResponsive" alt="imagen pintor Fede">
+							<img src="src\img\pintor1.jpg" class="imgResponsive wow fadeInUp" data-wow-delay="0.2s" alt="imagen pintor Fede">
 							<figcaption class="fundadoresFrase">"El arte como expresión"</figcaption>
 						</figure>
 						<figure class="fundadoresFigure imgResponsive">
 							<figcaption class="fundadoresNombres">Juli</figcaption>
-							<img src="src\img\pintora1.jpg"class="imgResponsive" alt="imagen pintora Juli">
+							<img src="src\img\pintora1.jpg"class="imgResponsive wow fadeInUp" data-wow-delay="0.2s" alt="imagen pintora Juli">
 							<figcaption class="fundadoresFrase">"No me vería en otro lugar"</figcaption>
 						</figure>
 						<figure class="fundadoresFigure imgResponsive">
 							<figcaption class="fundadoresNombres">Manu</figcaption>
-							<img src="src\img\pintor2.jpg" class="imgResponsive" alt="imagen pintor Manu">
+							<img src="src\img\pintor2.jpg" class="imgResponsive wow fadeInUp" data-wow-delay="0.2s" alt="imagen pintor Manu">
 							<figcaption class="fundadoresFrase">"Pintar para ser"</figcaption>
 						</figure>
 				
@@ -66,7 +68,7 @@
 			</div>
 			<!-----------Trabaja con Nosotros---------------->
 			<div>
-			<section>
+			<section class="fondo2">
 				<h2 class="textCenter">TRABAJA CON NOSOTROS</h2>
 				<article class="articleTrabajaNosotros">
 					<div id="trabaja1">
@@ -86,7 +88,7 @@
 					 
 					<div class="divTrabajaNosotros2">
 						<h3 class="titleTrabajaNosotros2"> ... entonces trabaja con nosotros</h3>
-						<div class="logoLinkedIn">
+						<div class="logoLinkedIn wow fadeIn" data-wow-delay="0.2s">
 							<a href="https://www.linkedin.com/"target="_blank"> 
 								<img src="src\img\linkedIn.png" width="70PX" height="70PX" alt="logo linkedin con enlace">
 							</a>
@@ -115,5 +117,9 @@
 		</a>
 	</footer>
 </div>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
