@@ -50,6 +50,9 @@ body {
 					line-height: 2.4rem;
 					
 					}
+				nav ul li a:hover {
+					background-color: grey;
+				}
 .imgResponsive {
 width: 100%;
 height: auto;
@@ -100,6 +103,9 @@ h2 {
 h3{
 	font-size: 2rem;
 	font-weight: 300;
+	animation-name: textAppear;
+	animation-duration: 2s ;
+	animation-timing-function: ease ;
 } 
 
 
@@ -555,6 +561,9 @@ h3{
 	#footer {
 		grid-area: footer;
 	}
+	#mainContacto h2 {
+		text-align: center;
+	}
 	/*Formulario de contacto*/
 	input, label {
 		display: block;
@@ -583,9 +592,11 @@ h3{
 	.redes {
 		margin: 5rem;
 		text-align: center;
+		
 	}
 	.redes a {
 		margin: 0rem 3rem;
+		text-decoration: none;
 	}
 
 
@@ -926,3 +937,32 @@ height: 3.5rem;
 
 }
 
+/*GRADIENT*/
+.fondo {
+background: rgb(253,253,253);
+background: linear-gradient(118deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+.fondo2 {
+background: rgb(253,253,253);
+background: linear-gradient(180deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+
+.fondo3 {
+background: rgb(253,253,253);
+background: linear-gradient(232deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+
+.fondoT {
+background: rgb(255,255,255, 0);
+}
+ /*ANIMACIONES*/
+@keyframes textAppear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.textAppear {
+	animation-name: textAppear;
+	animation-duration: 2s ;
+	animation-timing-function: ease ;
+}

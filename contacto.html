@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PSICODELIK CONTACTO</title>
 	<link rel="stylesheet" href="CSS\style.css">
+	<link rel="stylesheet" href="CSS\animate.css">
 </head>
 <body>
 <div class="contactoGrid">
@@ -29,7 +30,7 @@
 	<main id="mainContacto">
 		<h1>CONTACTO</h1>
 		<!--------------------- FORMULARIO ----------------->
-		<section>
+		<section class="fondoT textAppear">
 			<h2>¿Alguna duda? Completa el formulario y nos contactaremos a la brevedad</h2>
 
 			<form class="formularioContacto" action="envio.php" method="post">
@@ -105,19 +106,19 @@
 					<h2 class="textCenter">Seguinos en nuestras redes</h2>
 				<div class="redes">
 				<a href="https://www.facebook.com/" target="_blank">
-					<img src="src\img\face.png"width="70PX" height="70PX" alt="logo Facebook con enlace">
+					<img src="src\img\face.png"width="70PX" height="70PX" class=" wow fadeInUp" data-wow-delay=".0.2s" alt="logo Facebook con enlace">
 				</a>
 				<a href="https://www.instagram.com/" target="_blank">
-					<img src="src\img\insta.png"width="70PX" height="70PX" alt="logo instagram con enlace">
+					<img src="src\img\insta.png"width="70PX" height="70PX" class=" wow fadeInUp" data-wow-delay=".0.3s" alt="logo instagram con enlace">
 				</a>
 				<a href="https://twitter.com/" target="_blank">
-					<img src="src\img\twit.png"width="70PX" height="70PX" alt="logo Twitter con enlace">
+					<img src="src\img\twit.png"width="70PX" height="70PX" class=" wow fadeInUp" data-wow-delay=".0.4s" alt="logo Twitter con enlace">
 				</a>
 				<a href="https://www.youtube.com/" target="_blank">
-					<img src="src\img\youtube.png"width="80PX" height="60PX" alt="logo youtube con enlace">
+					<img src="src\img\youtube.png"width="80PX" height="60PX" class=" wow fadeInUp" data-wow-delay=".0.5s" alt="logo youtube con enlace">
 				</a>
 				<a href="https://www.spotify.com/ar/" target="_blank">
-					<img src="src\img\spoty.png" width="90PX" height="70PX" alt="logo spotify con enlace">
+					<img src="src\img\spoty.png" width="90PX" height="70PX" class=" wow fadeInUp" data-wow-delay=".0.6s" alt="logo spotify con enlace">
 				</a>
 				</div>
 			</div>
@@ -133,5 +134,9 @@
 		</a>
 	</footer>
 </div>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>

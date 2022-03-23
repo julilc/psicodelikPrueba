@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MULTIMEDIA</title>
 	<link rel="stylesheet" href="CSS\style.css">
+	<link rel="stylesheet" href="CSS\animate.css">
 </head>
 <body>
 <div class="gridMultimedia">
@@ -27,7 +28,7 @@
 	<main id="mainMultimedia">
 		<h1>MULTIMEDIA</h1>
 		<!------------------------ Fotos -------------------->
-		<section><h2 class="titleMarginB">Cuadros</h2>
+		<section class="fondo2"><h2 class="titleMarginB">Cuadros</h2>
 			<article>
 				<div class="multimediaFotos">
 					<img class="mFotos imgResponsive" src="src\img\cuadro4.webp" alt= "cuadro" width="1000vw">
@@ -40,15 +41,15 @@
 			</article>
 		</section>
 
-		<section id="MUSICA"><h2 class="titleMarginB">NUESTRA MUSICA EN TU CASA</h2>
+		<section id="MUSICA" class="fondo2"><h2 class="titleMarginB">NUESTRA MUSICA EN TU CASA</h2>
 			<article class="multimediaMusica">
 				<div id="reproductor"><audio src="src\music\musicamulti.m4a" alt= "musica para reproducir" controls="controls"></audio></div>
 				<div class="multimediaPlaylist"><h3 class="playlistTitle">Descubrí nuestras playlist seleccionadas</h3> <br>
-				<a class= "musicaLogo" href="https://www.spotify.com/ar/" target="_blank"><img src="src\img\spoty.png" width="110PX" height="90PX" alt="logo spotify con enlace"></a>
-				<a class= "musicaLogo"  href="https://www.youtube.com/watch?v=PTHmZkjROU8" target="_blank"><img src="src\img\youtube.png"width="100PX" height="80PX" alt="logo de Youtube"></a></div>
+				<a class= "musicaLogo" href="https://www.spotify.com/ar/" target="_blank"><img src="src\img\spoty.png" width="110PX" height="90PX" class="wow fadeInRight" data-wow-delay="0.2s" alt="logo spotify con enlace"></a>
+				<a class= "musicaLogo"  href="https://www.youtube.com/watch?v=PTHmZkjROU8" target="_blank"><img src="src\img\youtube.png"width="100PX" height="80PX" class="wow fadeInRight" data-wow-delay="0.2s"  alt="logo de Youtube"></a></div>
 			</article>
 		</section>
-		<section id="losArtistasDelMes"><h2 class="titleMarginB">LOS ARTISTAS DEL MES</h2>
+		<section id="losArtistasDelMes" class="fondo2"><h2 class="titleMarginB">LOS ARTISTAS DEL MES</h2>
 			<article>
 			<div class="artistas">
 				<figure class="artistasFigure">
@@ -84,6 +85,9 @@
 			<img src="src\img\psicodelik.png" width="100PX" height="20PX" alt="logo Psicodelik para volver al inicio">
 		</a>
 	</footer>
-
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 </html>
