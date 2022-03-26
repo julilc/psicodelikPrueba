@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MULTIMEDIA</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="CSS\animate.css">
 </head>
@@ -11,67 +13,121 @@
 <div class="gridMultimedia">
 <!---------------------------- HEADER ---------------------->
 	<header id="principio">
-	<nav>
-		<div id="title">
-		<a href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
-		</div>
-		<ul> 
-			<li><a href="nosotros.html">NOSOTROS</a></li>
-			<li><a href="la_galeria.html">LA GALERIA</a></li>
-			<li><a href="multimedia.html">MULTIMEDIA</a></li>
-			<li><a href="informacion_util.html">INFO UTIL</a></li>
-			<li><a href="contacto.html">CONTACTO</a></li>
-		</ul>
-	</nav>	
+		<!------------------------- nav bootstrap--------------->
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid nav">
+  	<div  id= "title">
+    <a class="navbar-brand" href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="nosotros.html">NOSOTROS</a></li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="la_galeria.html">LA GALERIA</a></li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="multimedia.html">MULTIMEDIA</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="informacion_util.html">INFO UTIL</a></li>
+         <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	</header>
 <!----------------------------- MAIN ------------------------->
 	<main id="mainMultimedia">
-		<h1>MULTIMEDIA</h1>
+		<h1 class="h1">MULTIMEDIA</h1>
 		<!------------------------ Fotos -------------------->
-		<section class="fondo2"><h2 class="titleMarginB">Cuadros</h2>
-			<article>
-				<div class="multimediaFotos">
-					<img class="mFotos imgResponsive" src="src\img\cuadro4.webp" alt= "cuadro" width="1000vw">
-					<img class="mFotos imgResponsive" src="src\img\cuadro1.jpg" alt="cuadro psicodelico 1">
-					<img class="imgResponsive" src="src\img\cuadro5.webp" alt="cuadro5">
-					<img class="mFotos" src="src\img\cuadro2.jpg" alt="cuadro psicodelico 2">
-					<img class="mFotos imgResponsive" src="src\img\cuadro3.jpg" alt="cuadro psicodelico 3">
-
-				</div>
-			</article>
+		<section class="fondo2"><h2 class="titleMarginB h2">Cuadros</h2>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		  <div class="carousel-indicators">
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		  </div>
+		  <div class="carousel-inner">
+		      <div class="carousel-item active">
+		      <img src="src\img\cuadro4.webp" class="d-block w-100 img-fluid" alt="cuadro">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="src\img\cuadro1.png" class="d-block w-100 img-fluid" alt="cuadro psicodelico 1">
+		    </div>
+		    <div class="carousel-item">
+		      <img src="src\img\cuadro5.png" class="d-block w-100 img-fluid" alt="cuadro5">
+		    </div>
+		   </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		  </button>
+		</div>	
 		</section>
 
-		<section id="MUSICA" class="fondo2"><h2 class="titleMarginB">NUESTRA MUSICA EN TU CASA</h2>
+		<section id="MUSICA" class="fondo2"><h2 class="titleMarginB h2">NUESTRA MUSICA EN TU CASA</h2>
 			<article class="multimediaMusica">
 				<div id="reproductor"><audio src="src\music\musicamulti.mp3" alt= "musica para reproducir" controls="controls"></audio></div>
-				<div class="multimediaPlaylist"><h3 class="playlistTitle">Descubrí nuestras playlist seleccionadas</h3> <br>
+				<div class="multimediaPlaylist"><h3 class="playlistTitle h3">Descubrí nuestras playlist seleccionadas</h3> <br>
 				<a class= "musicaLogo" href="https://www.spotify.com/ar/" target="_blank"><img src="src\img\spoty.png" width="110PX" height="90PX" class="wow fadeInRight" data-wow-delay="0.2s" alt="logo spotify con enlace"></a>
 				<a class= "musicaLogo"  href="https://www.youtube.com/watch?v=PTHmZkjROU8" target="_blank"><img src="src\img\youtube.png"width="100PX" height="80PX" class="wow fadeInRight" data-wow-delay="0.2s"  alt="logo de Youtube"></a></div>
 			</article>
 		</section>
-		<section id="losArtistasDelMes" class="fondo2"><h2 class="titleMarginB">LOS ARTISTAS DEL MES</h2>
-			<article>
-			<div class="artistas">
-				<figure class="artistasFigure">
-					<figcaption class="artistasNombre">Juana</figcaption>
-					<video controls autoplay loop muted>
+		<section id="losArtistasDelMes" class="fondo2"><h2 class="titleMarginB h2">LOS ARTISTAS DEL MES</h2>
+			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-indicators">
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active textCenter">
+			     <video controls autoplay loop muted>
 					<source src="src\vid\pinturaNena.webm" alt= "video artista Juana pintando">
 					</video>
-				</figure>
-				<figure class="artistasFigure">
-					<figcaption class="artistasNombre">Matias</figcaption>
-					<video controls autoplay muted> 
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Juana</h5>
+			        <p>7 años</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item textCenter">
+			      <video controls autoplay muted> 
 						<source src="src\vid\pinturaHombre.webm" alt="video artista Matias pintando" controls autoplay>
 					</video>
-				</figure>
-				<figure>
-					<figcaption class="artistasNombre">Laura</figcaption>
-					<video controls autoplay muted>
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Matias</h5>
+			        <p>28 años</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item textCenter">
+			     <video controls autoplay muted>
 					 <source src="src\vid\pinturaMujer.webm" alt= "video artista Lau pintando" controls autoplay>
 					 </video>
-				</figure>
-			</div>	
-			</article>
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Laura</h5>
+			        <p>27 años</p>
+			      </div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+			</section>
 			<!------------ flecha para ir arriba --------->
 			<div class="flechArribaMultimedia"><a href=#><img src="src\img\flecharriba.jpg"width=50px height="50px" alt="flecha para ir arriba de la pagina"></a></div>
 	
@@ -89,5 +145,6 @@
               <script>
               new WOW().init();
               </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>              
 </body>
 </html>

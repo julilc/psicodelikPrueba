@@ -6,29 +6,47 @@
 	<title>PSICODELIK INDEX</title>
 	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="CSS\animate.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
 <!-------------------------------- HEADER -------------------->
 
 	<div class="gridIndex">
 	<header id="principio">
-	<nav>
-		<div id="title">
-		<a href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
-		</div>
-		<ul> 
-			<li><a href="nosotros.html">NOSOTROS</a></li>
-			<li><a href="la_galeria.html">LA GALERIA</a></li>
-			<li><a href="multimedia.html">MULTIMEDIA</a></li>
-			<li><a href="informacion_util.html">INFO UTIL</a></li>
-			<li><a href="contacto.html">CONTACTO</a></li>
-		</ul>
-	</nav>
+	
+	<!------------------------- nav bootstrap--------------->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid nav">
+  	<div  id= "title">
+    <a class="navbar-brand" href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="nosotros.html">NOSOTROS</a></li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="la_galeria.html">LA GALERIA</a></li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="multimedia.html">MULTIMEDIA</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="informacion_util.html">INFO UTIL</a></li>
+         <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	</header>
 <!------------------------------ MAIN -------------------------->
-	<main id="mainIndex" class="noMarginTop">
+	<main id="mainIndex" class="noMarginTop main">
 		<div class="contenedor">
-		<h1 class="textoEncima">PRIMER GALERÍA PSICODÉLICA DE LA CIUDAD</h1>
+		<h1 class="textoEncima h1">PRIMER GALERÍA PSICODÉLICA DE LA CIUDAD</h1>
 		<div id="videoIndex"><video autoplay muted loop class="videoMode" type= "video/mp4">
 		<source src="src\vid\videoIndex.mp4" alt= "video con pintura desparramandose." type= "video/mp4">
 		</video>
@@ -45,5 +63,6 @@
               <script>
               new WOW().init();
               </script>	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

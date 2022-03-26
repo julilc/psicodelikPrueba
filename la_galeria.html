@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PSICODELIK LA GALERIA</title>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="CSS\animate.css">
 </head>
@@ -11,33 +13,48 @@
 <div class="galeriaGrid">
 <!------------------------- HEADER ------------------------->
 	<header id="principio">
-	<nav>
-		<div id="title">
-		<a href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="290rem" height="55rem"></a>
-		</div>
-		<ul> 
-			<li><a href="nosotros.html">NOSOTROS</a></li>
-			<li><a href="la_galeria.html">LA GALERIA</a></li>
-			<li><a href="multimedia.html">MULTIMEDIA</a></li>
-			<li><a href="informacion_util.html">INFO UTIL</a></li>
-			<li><a href="contacto.html">CONTACTO</a></li>
-		</ul>
-	</nav>	
+		<!------------------------- nav bootstrap--------------->
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid nav">
+  	<div  id= "title">
+    <a class="navbar-brand" href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="nosotros.html">NOSOTROS</a></li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="la_galeria.html">LA GALERIA</a></li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="multimedia.html">MULTIMEDIA</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="informacion_util.html">INFO UTIL</a></li>
+         <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	</header>
 <!------------------------------ MAIN ----------------------->
 	<main id="galeriaMain">
-		<h1>LA GALERIA</h1>
+		<h1 class="h1">LA GALERIA</h1>
 		<!------------------------El Bar-------------------->
 		
 		
 		<section class="contenedorGaleriaRight fondo">
 		<div class="textoGaleria">
 			<div>
-			<h2 class="laGaleriaTitleLeft">EL BAR</h2>
+			<h2 class="laGaleriaTitleLeft h2">EL BAR</h2>
 			</div>
 			<div>
 			<article class="bar">
-				<div><h3 class="laGaleriaText" ><p>El bar se encuentra en la planta baja de la galería. Esta equipado con música, juegos y trucos visuales que harán que te sientas sumergido en una experiencia psicodélica como nunca antes has visto. A demás, la carta tiene el mismo diseño, combiando colores, sabores y hasta texturas inigualables que harán que valga la pena pasarse por este lugar de nuestra galería.</p></h3>
+				<div><h3 class="laGaleriaText h3" ><p>El bar se encuentra en la planta baja de la galería. Esta equipado con música, juegos y trucos visuales que harán que te sientas sumergido en una experiencia psicodélica como nunca antes has visto. A demás, la carta tiene el mismo diseño, combiando colores, sabores y hasta texturas inigualables que harán que valga la pena pasarse por este lugar de nuestra galería.</p></h3>
 				</div>
 			</div>
 		</div>
@@ -51,10 +68,10 @@
 		
 			<div class="textoGaleria">
 				<div>
-			<h2 class="laGaleriaTitleRight"> SALA PLASTICA</h2>
+			<h2 class="laGaleriaTitleRight h2"> SALA PLASTICA</h2>
 		</div>
 			<article class="textoDerecha">
-				<div><h3 class="laGaleriaText"><p>La sala plástica es quizás uno de nuestros ambientes favoritos del lugar. En ella se encuentran todo tipo de materiales con los que podés experimentar durante toda una hora. Desde crayones y fibras hasta aerosoles, óleos y tinturas, así como también elementos con los que crear texturas. A demás, siempre nos encontramos abiertos a la incorporación de nuevos materiales,¡te invitamos a que traigas los tuyos también!</p></h3></div>
+				<div><h3 class="laGaleriaText h3"><p>La sala plástica es quizás uno de nuestros ambientes favoritos del lugar. En ella se encuentran todo tipo de materiales con los que podés experimentar durante toda una hora. Desde crayones y fibras hasta aerosoles, óleos y tinturas, así como también elementos con los que crear texturas. A demás, siempre nos encontramos abiertos a la incorporación de nuevos materiales,¡te invitamos a que traigas los tuyos también!</p></h3></div>
 			</div>	
 			
 			<div class="divSalaP"><img src="src\img\pintando2.jpg" alt= "imagen sala plastica" class="imgResponsive wow fadeInLeft" data-wow-delay="0.3s"></div>
@@ -64,22 +81,22 @@
 		<!---------------------Sala Expositoria--------------->
 		<section class="contenedorGaleriaRight fondo">
 			<div class="textoGaleria">
-			<h2 class="laGaleriaTitleLeft">SALA EXPOSITORIA</h2>
+			<h2 class="laGaleriaTitleLeft h2">SALA EXPOSITORIA</h2>
 			<article>
-				<div><h3 class="laGaleriaText" ><p>La sala expositoria es el reflejo de lo que sucede en nuestros otros ambientes. Es aquí donde los clientes pueden pasar y apreciar todas y cada una de las obras de arte que se han ido creando a lo largo de nuestra historia. Contamos con exposisiones mensuales para dar a conocer nuevos artistas, ¡Postulate!</p></h3></div>
+				<div><h3 class="laGaleriaText h3" ><p>La sala expositoria es el reflejo de lo que sucede en nuestros otros ambientes. Es aquí donde los clientes pueden pasar y apreciar todas y cada una de las obras de arte que se han ido creando a lo largo de nuestra historia. Contamos con exposisiones mensuales para dar a conocer nuevos artistas, ¡Postulate!</p></h3></div>
 			</div>
-				<div class="divBar"><h3><img src="src\img\galeria.jpg" alt= "imagen sala expositoria con cuadros psicodelicos" class="imgResponsive wow fadeInRight" data-wow-delay="0.3s"></h3></div>
+				<div class="divBar"><h3 class="h3"><img src="src\img\galeria.jpg" alt= "imagen sala expositoria con cuadros psicodelicos" class="imgResponsive wow fadeInRight" data-wow-delay="0.3s"></h3></div>
 			</article>
 			<
 		</section>
 		<!------------------------Sumergite------------------->
 		<section class="contenedorGaleriaLeft fondo3">
 			<div class="textoGaleria">
-			<h2 class="laGaleriaTitleRight">SUMERGITE</h2>
+			<h2 class="laGaleriaTitleRight h2">SUMERGITE</h2>
 			<article class="textoDerecha">
-				<div><h3 class="laGaleriaText"><p>Es nuestra última gran incorporación. Decidimos combinar la tecnología con el arte para poder ofrecer una experiencia tridimencional donde podrás ver a través de nuestros dispositivos VR la creación de un cuadro psicodélico generado por IA <br>¡Sin dudas, es una experiencia inigualable!</p></h3></div>
+				<div><h3 class="laGaleriaText h3"><p>Es nuestra última gran incorporación. Decidimos combinar la tecnología con el arte para poder ofrecer una experiencia tridimencional donde podrás ver a través de nuestros dispositivos VR la creación de un cuadro psicodélico generado por IA <br>¡Sin dudas, es una experiencia inigualable!</p></h3></div>
 			</div>
-				<div class="divSumergite"><h3><img src="src\img\sumergite.jpg" alt="imagen de hombre con vr viendo una escena alucinante" class="imgResponsive wow fadeInLeft" data-wow-delay="0.3s"></h3></div>
+				<div class="divSumergite"><h3 class="h3"><img src="src\img\sumergite.jpg" alt="imagen de hombre con vr viendo una escena alucinante" class="imgResponsive wow fadeInLeft" data-wow-delay="0.3s"></h3></div>
 			</article>
 			
 			
@@ -106,5 +123,7 @@
               <script>
               new WOW().init();
               </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>              
 </body>
 </html>

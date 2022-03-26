@@ -4,45 +4,67 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>PSICODELIK CONTACTO</title>
-	<link rel="stylesheet" href="CSS\style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="CSS\animate.css">
+	<link rel="stylesheet" href="CSS\style.css">
 </head>
 <body>
 <div class="contactoGrid">
 <!------------------------------ HEADER -------------------->
 	<header id="principio">
-	<nav>
-		<div id="title">
-		<a href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
-		</div>
-		<ul> 
-			<li><a href="nosotros.html">NOSOTROS</a></li>
-			<li><a href="la_galeria.html">LA GALERIA</a></li>
-			<li><a href="multimedia.html">MULTIMEDIA</a></li>
-			<li><a href="informacion_util.html">INFO UTIL</a></li>
-			<li><a href="contacto.html">CONTACTO</a></li>
-		</ul>
-	</nav>	
+	<!------------------------- nav bootstrap--------------->
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid nav">
+  	<div  id= "title">
+    <a class="navbar-brand" href="index.html"><img src="src\img\psicodelik.svg" alt="logo Psicodelik" width="270rem" height="55rem"></a>
+	</div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link"  href="nosotros.html">NOSOTROS</a></li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="la_galeria.html">LA GALERIA</a></li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="multimedia.html">MULTIMEDIA</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="informacion_util.html">INFO UTIL</a></li>
+         <li class="nav-item">
+          <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	</header>
 	
 <!------------------------------ MAIN ----------------------->
 
 	<main id="mainContacto">
-		<h1>CONTACTO</h1>
+		<h1 class="h1">CONTACTO</h1>
 		<!--------------------- FORMULARIO ----------------->
 		<section class="fondoT textAppear">
-			<h2>¿Alguna duda? Completa el formulario y nos contactaremos a la brevedad</h2>
-
-			<form class="formularioContacto" action="envio.php" method="post">
-				<div>
-					<fieldset class="formStyle">
-						<legend>Datos personales</legend>
-							<label for="Nombre">Nombre y apelllido
-							</label>
-							<input type="text" placeholder="Pepe Rodriguez" name="Nombre" id="Nombre">
-
-							<label for="Localidad">Localidad</label>
-							<select name="Localidad" id="Localidad">
+			<h2 class="h2">¿Alguna duda? Completa el formulario y nos contactaremos a la brevedad</h2>
+		<form class="m-5 formularioContacto" action="envio.php" method="post">
+		<fieldset class="m-5">
+		<legend>Datos personales</legend>
+		<div class="row">
+		  <div class="col">
+		   <label for="Nombre"> Nombre</label> <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+		  </div>
+		  <div class="col">
+		    <label for="Apellido"> Apellido</label><input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+		  </div>
+		</div>
+		<div class="row g-3 pt-4">
+		  <div class="col-sm-7">
+		  	<label for="Provincia">Provincia</label>
+		   <select class="form-control" name="Localidad" id="Localidad">
 								<option value="Seleccionar"> Seleccionar</option>
 								<option value="Buenos Aires"> Buenos Aires</option>
 								<option value="CABA">CABA</option>
@@ -70,40 +92,52 @@
 								<option value="Tucuman">Tucuman</option>
 								<option value="Exterior">Exterior del pais</option>
 							</select>
+		  </div>
+		  <div class="col-sm">
+		  	<label for="Ciudad">Ciudad</label>
+		    <input type="text" class="form-control" placeholder="Ciudad" aria-label="State">
+		  </div>
+		  <div class="col-sm">
+		  	<label for="Zip">Zip</label>
+		    <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+		  </div>
+		</div>
+		
+		<div class="input-group mt-5">
 
-							<label for="Celular"> Celular</label>
-							<input type="tel" placeholder="+55 (555) 555-5555" name="Celular" id="Celular">
+	  <input type="text" class="form-control" placeholder="sumail" aria-label="Username">
+	  <span class="input-group-text">@</span>
+	  <input type="text" class="form-control" placeholder="xxxx.com" aria-label="Server">
+		</div>
+		</fieldset>
+	<fieldset class="m-5">
+	<legend>¿Quisieras recibir novedades acerca de la galería y sus cursos?</legend>
+	<div class="form-check form-check-inline">
+		
+	  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+	  <label class="form-check-label" for="inlineRadio1">SI</label>
+	</div>
+	<div class="form-check form-check-inline">
+		
+	  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+	  <label class="form-check-label" for="inlineRadio2">NO</label>
+	</div>
+	</fieldset>
+	<fieldset class="m-5">
+	<legend>Deje su comentario</legend>
+	 
+	  <textarea class="form-control" id="Comentarios" rows="7"></textarea>
+	</fieldset>
+	<div class="m-5 textCenter">
+			<input class="btn btn-outline-info" type="Enviar" value="Submit">
+		<input class="btn btn-outline-info" type="Cancelar" value="Reset">
+		</div>
 
-							<label for="Email"> Email</label>
-							<input type="email" placeholder="xxxx@mail.com" name="Emai" id="Email">
-					</fieldset>
-
-					<fieldset class="formStyle">
-						<legend>¿Quisieras recibir novedades acerca de la galería y sus cursos?</legend>
-							<label for="Si">SI</label>
-							<input type="radio" name="recomendaciones" id="recomendaciones">
-							<Label for="No">NO</Label>
-							<input type="radio" name="recomendaciones" id="recomendaciones">
-							
-					</fieldset>
-				</div>
-				<div>
-					<fieldset class="formStyle">
-						<legend>Comentarios</legend>
-						<label for="Comentarios"></label>
-						<textarea name="Comentarios" id="Comentarios" cols="72" rows="10"></textarea>
-					</fieldset>
-					<div class="textCenter">
-						<input type="Reset" value="Cancelar">
-						<input type="Submit" name="Enviar">
-					</div>
-				</div>
-			</form>
 
 			<!-------------------- REDES ------------------>
 		
 			<div>
-					<h2 class="textCenter">Seguinos en nuestras redes</h2>
+					<h2 class="textCenter h2">Seguinos en nuestras redes</h2>
 				<div class="redes">
 				<a href="https://www.facebook.com/" target="_blank">
 					<img src="src\img\face.png"width="70PX" height="70PX" class=" wow fadeInUp" data-wow-delay=".0.2s" alt="logo Facebook con enlace">
@@ -138,5 +172,6 @@
               <script>
               new WOW().init();
               </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>              
 </body>
 </html>
