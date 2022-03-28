@@ -112,6 +112,7 @@ height: auto;
 	animation-name: textAppear;
 	animation-duration: 2s ;
 	animation-timing-function: ease ;
+	text-decoration-color: whitesmoke;
 } 
 
 
@@ -421,6 +422,9 @@ height: auto;
 		}
 	.mFotos {
 		margin: 0rem 2rem;
+	}
+	.carrouselImg {
+		height: 80vh;
 	}
 	/*Musica*/
 	
