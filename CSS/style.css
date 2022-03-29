@@ -45,6 +45,7 @@ body {
 				display: inline-block;
 				margin-right: 5rem;
 				position: relative;
+				
 				}
 				nav ul li a{
 					text-decoration: none;
@@ -52,11 +53,16 @@ body {
 					font-size: 2rem;
 					font-weight: 300;
 					line-height: 2.4rem;
+					border-bottom: 0.2rem solid;
+					border-bottom-color: transparent;
+
 					
 					}
 				nav ul li a:hover {
-					background-color: grey;
+					border-bottom: 0.2rem solid;
+					border-bottom-color:#FF3E74;
 				}
+
 .imgResponsive {
 width: 100%;
 height: auto;
@@ -424,7 +430,7 @@ height: auto;
 		margin: 0rem 2rem;
 	}
 	.carrouselImg {
-		height: 80vh;
+		height: 85vh;
 	}
 	/*Musica*/
 	
