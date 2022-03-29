@@ -106,11 +106,13 @@ height: auto;
 	font-size: 4rem;
 	font-weight: 500;
 	color: whitesmoke;
+
 }
 .h2 {
 	font-size: 3rem;
 	font-weight: 300;
 	color: whitesmoke;
+
 }
 .h3{
 	font-size: 2rem;
@@ -974,6 +976,9 @@ background: rgb(255,255,255, 0);
 @keyframes textAppear {
 	from {opacity: 0;}
 	to {opacity: 1;}
+}
+@keyframes AnimationTitle {
+	
 }
 
 .textAppear {
