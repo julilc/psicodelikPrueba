@@ -875,7 +875,7 @@ grid-template-areas:
 		padding: 0rem;
 		display: flex;
 		align-items: center;
-		width: 
+		
 
 	}
 	.bar {
@@ -949,9 +949,6 @@ margin: 3rem 3rem;
 	text-align: center;
 	font-size: 3.5rem;
 	width: 80%;
-	
-
-	
 }
 .formularioContacto input {
 width: 100%;

@@ -175,6 +175,194 @@ height: auto;
 			margin: 5rem 0rem;
 
 		}
+	/*LA GALERIA*/
+	.contenedorGaleriaRight {
+		padding: 3rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.divBar {
+		width: 290%;
+		height: auto;
+			}
+	.contenedorGaleriaLeft{
+		padding: 3rem;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	.divSalaP {
+		width: 290%;
+		height: auto;
+		
+	}
+	.laGaleriaText{
+		line-height: 4rem;
+		font-size: 2.2rem;
+		font-weight: 3rem;
+		margin: 3rem;
+
+	}
+	.bar {
+		width: 90%;
+		margin-right: 0rem;
+	}
+	
+	.laGaleriaTitleRight {
+		text-align: right;
+		margin-right: 9rem;
+	}
+	.laGaleriaTitleLeft {
+		margin-left: 5rem;
+	}
+	.textoDerecha {
+		width: 90%;
+		margin-right: 0rem;
+		text-align: right;
+		margin-right: 1rem;
+	}
+	.divSumergite {
+		width: 270%;
+		height: auto;
+	}
+	
+	/*MULTIMEDIA*/
+	/*Fotos*/
+	.multimediaFotos {
+		display:flex;
+		flex-direction: row;
+		overflow-x: scroll;
+		text-align: left;
+		justify-content: space-between;
+		margin-top: 2rem;
+		}
+	.mFotos {
+		margin: 0rem 2rem;
+	}
+	.carrouselImg {
+		height: 85vh;
+	}
+	/*Musica*/
+	
+	.multimediaMusica {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin-left: 10rem;
+		}
+	.multimediaPlaylist {
+		margin-left: 8rem;
+		text-align: center;
+
+	}
+	.musicaLogo {
+		margin: 1rem 1rem;
+	}
+	.playlistTitle{
+		font-size: 2rem;
+		font-weight: 400;
+	}
+	
+	/*Los Artistas del Mes*/
+	.artistas{
+		display: inline-flex;
+		text-align: center;
+		flex-direction: row;
+		justify-content: left;
+		font-size: 2rem;
+		overflow-x: scroll;
+		margin-top: 1.5rem;
+		}
+	.artistasFigure {
+		margin-right: 2rem;
+	}
+	.artistasNombre {
+		margin-bottom: 2rem;
+	}
+
+/*INFO UTIL*/
+/*Talleres u cursos disponibles*/
+	.infoUtil1 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+		}
+	.infoCursos {
+	 display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin: 3.7rem 5.7rem;
+		
+	}
+	.cursos {
+		margin: 0rem 5rem;
+		font-size: 2rem;
+	}
+	/*Donde Encontrarnos*/
+	.dondeEncontrarnos {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-between;
+		margin-top: 4rem;
+		}
+	.horarios {
+		font-size: 2rem;
+		margin-left: 5rem;
+		widows: 100%;
+		}
+	.listHorarios {
+		list-style: none;
+	}
+	.calendario {
+		width: 50%;
+	}
+	.asideMuestras {
+		display: flex;
+
+	}
+	.divMap {
+	width: 100%;
+	height: 40rem;
+	}
+	.mapa{
+	width: 100%;
+	height: 40rem;
+	}
+/*CONTACTO*/
+/*Formulario de contacto*/
+	input, label {
+		display: block;
+	}
+	.formularioContacto {
+	font-size: 2rem;
+	}
+	legend {
+		font-size: 2.5rem;
+	}
+
+	.formularioContacto input{
+			display: inline-block;
+			font-size: 1.5rem;
+			}
+	#Comentarios {margin: 1rem 0.7rem;}
+	/*Redes*/
+
+	.redes {
+		margin: 5rem;
+		text-align: center;
+		
+	}
+	.redes a {
+		margin: 0rem 3rem;
+		text-decoration: none;
+	}
+
 /*GRADIENT*/
 .fondo {
 background: rgb(253,253,253);
