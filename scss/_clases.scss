@@ -1,0 +1,210 @@
+#mainIndex {
+	overflow-x: hidden;
+}
+.nav {
+		display: flex;
+		flex-direction: column;
+		font-size: 2rem;
+	}
+.imgResponsive {
+width: 100%;
+height: auto;
+}
+.heightImg {
+	height: 100%;
+}
+.h1{
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 500;
+	color: whitesmoke;
+
+}
+.h2 {
+	font-size: 3rem;
+	font-weight: 300;
+	color: whitesmoke;
+
+}
+.h3{
+	font-size: 2rem;
+	font-weight: 300;
+	animation-name: textAppear;
+	animation-duration: 2s ;
+	animation-timing-function: ease ;
+	text-decoration-color: whitesmoke;
+} 
+.textAlignRight {
+	text-align: right;
+}
+
+.textCenter{
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.videoMode {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	overflow-x: hidden;
+}
+.noMarginTop {
+	margin-top: 0rem;
+}
+.flechArriba {
+		display: block;
+		text-align: center;
+		margin-bottom: 1rem;
+		margin-top: 0rem;
+	}
+
+ .flechArribaMultimedia {
+ 	text-align: center;
+ 	margin-top: 1rem;
+ 	 }
+
+.titleMarginB {
+		margin-bottom: 2rem;
+	}
+/*Inicio*/
+.contenedor {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	}
+.textoEncima {
+	position: absolute;
+	top: 40%;
+	rigth: 60%;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 3rem ;
+	font-weight: 300 ;
+	max-width: 50%;
+	}
+
+/*NOSOTROS*/
+	/*Nuestra Historia*/
+	.nuestraHistoriaText {
+		line-height: 4rem;
+		font-size: 2.3rem;
+		margin-right: 3rem;
+		
+	}
+	.divTaller{
+		width: 150%;
+		height: auto;
+	}
+	/*nosotros2*/
+	.nosotros2 {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		}
+.fundadores{
+		 display: flex;
+		flex-direction: row;
+		justify-content: center;
+		justify-items: space-around;
+		font-size: 2rem;
+		
+
+		}
+		.fundadoresFigure{
+			text-align: center;
+			margin: 3rem;
+			
+		}
+		.fundadoresNombres {
+			margin-bottom: 3rem;
+			font-size: 2.5rem;
+			
+		}
+		.fundadoresFrase {
+			margin-top: 3rem;
+			
+		}
+		.imgResponsive1{
+			height: 48rem;
+		}
+	/*Trabaja con Nosotros*/
+		.titleTrabajaNosotros {
+			font-size: 2.3rem;
+			font-weight: 300;
+			margin-bottom: 2rem;
+			
+			
+		}
+		.titleTrabajaNosotros2 {
+			font-size: 2.3rem;
+			font-weight: 300;
+			margin-bottom: 2rem;
+			
+		}
+
+		.articleTrabajaNosotros {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: stretch;
+			
+			}
+		.divTrabajaNosotros{
+			margin-bottom: 3rem;
+			font-size: 1.8rem;
+			font-weight: 300;
+			margin-top: 4rem;
+			text-align: left;
+			}
+		.divTrabajaNosotros2{
+			font-size: 1.8rem;
+			font-weight: 300;
+			text-align: left;
+			}
+		.ulTrabajaNosotros {
+			font-size: 1.8rem;
+			font-weight: 300;
+			list-style: none;
+			text-align: left;
+
+		}
+		.logoLinkedIn {
+			text-align: center;
+			margin: 5rem 0rem;
+
+		}
+/*GRADIENT*/
+.fondo {
+background: rgb(253,253,253);
+background: linear-gradient(118deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+.fondo2 {
+background: rgb(253,253,253);
+background: linear-gradient(180deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+
+.fondo3 {
+background: rgb(253,253,253);
+background: linear-gradient(232deg, rgba(253,253,253,0) 0%, rgba(221,220,220,0.23602944595807074) 63%, rgba(232,232,232,0.3956933115042892) 85%);
+}
+
+.fondoT {
+background: rgb(255,255,255, 0);
+}
+ /*ANIMACIONES*/
+@keyframes textAppear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes AnimationTitle {
+
+}
+
+.textAppear {
+	animation-name: textAppear;
+	animation-duration: 2s ;
+	animation-timing-function: ease ;
+}
+

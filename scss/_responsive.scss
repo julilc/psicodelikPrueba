@@ -1,0 +1,119 @@
+/*GRIDS*/
+/*Index*/
+.gridIndex {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"nav" "main" "footer" ;
+
+	}
+
+		/*GridArea*/
+		#principio {
+			grid-area: nav;
+			}
+		#mainIndex {
+			grid-area: main;
+			overflow-y: hidden;
+		}
+		#footer {
+			grid-area: footer;
+		}
+/*Nosotros*/
+	.gridNosotros{
+		display: grid;
+		grid-template-columns:100%;
+		grid-template-rows: auto ;
+		grid-template-areas:
+		 "nav"
+		 "main" 
+		 "footer";
+	}
+	/*Grid Areas*/
+	#principio{
+		grid-area: nav;
+	}
+	#nosotrosMain{
+		grid-area: main;
+		max-width: 100%;
+	}
+		
+	#footer {
+		grid-area: footer;
+	}
+
+/*QUERYS*/
+@media screen and (max-width: 1024px) /*desktop*/ {
+
+	/*GENERAL*/
+	aside {
+		display: none;
+	}
+
+	/*NOSOTROS*/
+
+	.contenedorNuestraHistoria {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.divTaller {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 991px){
+.nav {
+		display: flex;
+		flex-direction: row;
+	}
+}
+@media screen and (max-width: 624px) /*tablet*/ {
+	/*GENERAL*/
+	aside {
+		display: none;
+	}
+	/*INICIO*/
+	.textoEncima {
+		right: 40%;
+		text-align:left ;
+	}
+	/*NOSOTROS*/
+	#nosotros624px {
+		display: none;
+	}
+	.fundadores {
+		display: flex;
+		flex-direction: column;
+	}
+	#trabaja1 {
+		display: none;
+	}
+	.logoLinkedIn {
+		margin: 1rem;
+	}
+	.titleTrabajaNosotros2 { 
+	display: none; }
+
+}
+@media screen and (max-width: 520px) /*mobile*/{
+	/*GENERAL*/
+	aside {display: none;}
+
+}
+@media screen and (max-width: 380px) /*fold*/{
+/*INICIO*/
+#titleNuestraHistoria {
+	text-align: center;
+}
+
+/*NOSOTROS*/
+#nosotrosFull {
+	display: none;
+}
+#nosotros320px {
+	text-align: left;
+}
+}

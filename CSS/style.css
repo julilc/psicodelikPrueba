@@ -91,7 +91,7 @@ height: auto;
 
 /*body*/
 	body main {
-		margin-top: 2rem;
+		
 	}
 
 		body main section{
@@ -240,7 +240,7 @@ height: auto;
 	#principio{
 		grid-area: nav;
 	}
-	#nuosotrosMain{
+	#nosotrosMain{
 		grid-area: main;
 		max-width: 100%;
 	}
@@ -868,6 +868,7 @@ grid-template-areas:
 	}
 	
 	
+
 	.contenedorGaleriaRight {
 		position: relative;
 		overflow-x: hide;
