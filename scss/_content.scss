@@ -1,0 +1,33 @@
+		body{
+			background-color: black;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			width: 100%;
+			header{
+			background: $bkColor;
+			position: sticky;
+			top: 0;
+			width: 100%;
+			z-index: 1;}
+			main{
+			margin-top: 2rem;
+			margin-bottom: 0rem;
+				section {
+					background: $navColor;
+					padding: 2rem 3rem;
+					color: whitesmoke;
+					margin: 4rem 2rem;
+					padding: 1 rem;
+						article {
+							display: flex;
+							flex-direction: row;
+							margin: 1 rem;
+							padding: 1 rem;
+							align-items: center;
+							line-height: 2.4rem;	
+						}
+					}
+				}	
+		}
+	
