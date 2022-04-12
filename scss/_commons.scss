@@ -1,6 +1,20 @@
 //variables
-$bkColor: rgba(240, 240, 240, 1);
-$navColor: rgba(220, 220, 220, 0.5);
+$colors: (
+	primaryColor: black,
+	secondaryColor: rgba(220, 220, 220, 0.5),
+	tColor: #F0F0F0,
+	 );
+
+
+@mixin sizes ($width,$height) {
+	width: $width;
+	height:$height;}
+
+/*tamaño texto*/
+$Sm: 2rem;
+$md: 0;
+$l: 0;
+$xl: 0;
 
 .imgResponsive {
 width: 100%;

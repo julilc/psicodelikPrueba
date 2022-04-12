@@ -1,11 +1,11 @@
 		body{
-			background-color: black;
+			background-color: map-get($colors,primaryColor);
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 			background-size: cover;
 			width: 100%;
 			header{
-			background: $bkColor;
+			background: map-get($colors,tColor);
 			position: sticky;
 			top: 0;
 			width: 100%;
@@ -14,9 +14,9 @@
 			margin-top: 2rem;
 			margin-bottom: 0rem;
 				section {
-					background: $navColor;
+					background: map-get($colors, secondaryColor);
 					padding: 2rem 3rem;
-					color: whitesmoke;
+					color: map-get($colors,tColor);
 					margin: 4rem 2rem;
 					padding: 1 rem;
 						article {

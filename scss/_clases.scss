@@ -4,35 +4,35 @@
 .nav {
 		display: flex;
 		flex-direction: column;
-		font-size: 2rem;
+		font-size: $Sm;
 	}
-.imgResponsive {
-width: 100%;
-height: auto;
+.imgResponsive { @include sizes (100%, auto)
+
 }
 .heightImg {
 	height: 100%;
 }
+
 .h1{
-	text-align: center;
+	@extend .textCenter;
 	font-size: 4rem;
 	font-weight: 500;
-	color: whitesmoke;
+	color: map-get($colors,tColor);
 
 }
 .h2 {
 	font-size: 3rem;
 	font-weight: 300;
-	color: whitesmoke;
+	color:  map-get($colors,tColor);
 
 }
 .h3{
-	font-size: 2rem;
+	font-size: $Sm;
 	font-weight: 300;
 	animation-name: textAppear;
 	animation-duration: 2s ;
 	animation-timing-function: ease ;
-	text-decoration-color: whitesmoke;
+	text-decoration-color: map-get($colors,tColor);
 } 
 .textAlignRight {
 	text-align: right;
@@ -53,24 +53,29 @@ height: auto;
 }
 .flechArriba {
 		display: block;
-		text-align: center;
+		@extend .textCenter;
 		margin-bottom: 1rem;
 		margin-top: 0rem;
 	}
 
  .flechArribaMultimedia {
- 	text-align: center;
+ 	@extend .textCenter;
  	margin-top: 1rem;
  	 }
 
 .titleMarginB {
 		margin-bottom: 2rem;
 	}
+.seccionesNav{
+	border-bottom:0.2rem solid;
+	
+	}
+
 /*Inicio*/
 .contenedor {
 	position: relative;
 	display: inline-block;
-	text-align: center;
+	@extend .textCenter;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	}
@@ -79,7 +84,7 @@ height: auto;
 	top: 40%;
 	rigth: 60%;
 	color: whitesmoke;
-	text-align: center;
+	@extend .textCenter;
 	font-size: 3rem ;
 	font-weight: 300 ;
 	max-width: 50%;
@@ -108,12 +113,12 @@ height: auto;
 		flex-direction: row;
 		justify-content: center;
 		justify-items: space-around;
-		font-size: 2rem;
+		font-size: $Sm;
 		
 
 		}
 		.fundadoresFigure{
-			text-align: center;
+			@extend .textCenter;
 			margin: 3rem;
 			
 		}
@@ -171,7 +176,7 @@ height: auto;
 
 		}
 		.logoLinkedIn {
-			text-align: center;
+			@extend .textCenter;
 			margin: 5rem 0rem;
 
 		}
@@ -210,7 +215,7 @@ height: auto;
 	}
 	
 	.laGaleriaTitleRight {
-		text-align: right;
+		@extend .textAlignRight;
 		margin-right: 9rem;
 	}
 	.laGaleriaTitleLeft {
@@ -219,7 +224,7 @@ height: auto;
 	.textoDerecha {
 		width: 90%;
 		margin-right: 0rem;
-		text-align: right;
+		@extend .textAlignRight;
 		margin-right: 1rem;
 	}
 	.divSumergite {
@@ -254,24 +259,24 @@ height: auto;
 		}
 	.multimediaPlaylist {
 		margin-left: 8rem;
-		text-align: center;
+		@extend .textCenter;
 
 	}
 	.musicaLogo {
 		margin: 1rem 1rem;
 	}
 	.playlistTitle{
-		font-size: 2rem;
+		font-size: $Sm;
 		font-weight: 400;
 	}
 	
 	/*Los Artistas del Mes*/
 	.artistas{
 		display: inline-flex;
-		text-align: center;
+		@extend .textCenter;
 		flex-direction: row;
 		justify-content: left;
-		font-size: 2rem;
+		font-size: $Sm;
 		overflow-x: scroll;
 		margin-top: 1.5rem;
 		}
@@ -301,7 +306,7 @@ height: auto;
 	}
 	.cursos {
 		margin: 0rem 5rem;
-		font-size: 2rem;
+		font-size: $Sm;
 	}
 	/*Donde Encontrarnos*/
 	.dondeEncontrarnos {
@@ -312,7 +317,7 @@ height: auto;
 		margin-top: 4rem;
 		}
 	.horarios {
-		font-size: 2rem;
+		font-size: $Sm;
 		margin-left: 5rem;
 		widows: 100%;
 		}
@@ -340,7 +345,7 @@ height: auto;
 		display: block;
 	}
 	.formularioContacto {
-	font-size: 2rem;
+	font-size: $Sm;
 	}
 	legend {
 		font-size: 2.5rem;
@@ -355,7 +360,7 @@ height: auto;
 
 	.redes {
 		margin: 5rem;
-		text-align: center;
+		@extend .textCenter;
 		
 	}
 	.redes a {
