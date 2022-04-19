@@ -3440,15 +3440,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #Comentarios {
     width: 100%;
   }
-}
-/*ERROR 404*/
-.error404 h1 {
-  left: 20%;
-}
-.error404 button {
-  left: 34%;
-}
 
+  /*ERROR 404*/
+  .error404 h1 {
+    left: 20%;
+  }
+  .error404 button {
+    left: 34%;
+  }
+}
 @media screen and (max-width: 380px) {
   /*INICIO*/
   #titleNuestraHistoria {
