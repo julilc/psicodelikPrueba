@@ -11,7 +11,7 @@ html {
 }
 
 /*tamaño texto*/
-.imgResponsive, #error404 img {
+.imgResponsive, .error404 img {
   width: 100%;
   height: auto;
 }
@@ -26,7 +26,7 @@ html {
   font-size: 2rem;
 }
 
-.imgResponsive, #error404 img {
+.imgResponsive, .error404 img {
   width: 100%;
   height: auto;
 }
@@ -410,10 +410,10 @@ legend {
 }
 
 /*ERROR 404*/
-#error404 {
+.error404 {
   overflow-y: hidden;
 }
-#error404 h1 {
+.error404 h1 {
   position: absolute;
   text-align: center;
   justify-content: center;
@@ -422,10 +422,10 @@ legend {
   color: black;
   font-size: 5rem;
 }
-#error404 img {
+.error404 img {
   height: 100vh;
 }
-#error404 button {
+.error404 button {
   position: absolute;
   top: 50%;
   left: 44%;
@@ -434,16 +434,16 @@ legend {
   background: black;
   border-color: #62FDFF;
 }
-#error404 button a {
+.error404 button a {
   font-size: 2rem;
   text-decoration: none;
   color: #62FDFF;
 }
-#error404 button:hover {
+.error404 button:hover {
   background-color: #62FDFF;
   border-color: black;
 }
-#error404 button:hover a {
+.error404 button:hover a {
   color: black;
 }
 
