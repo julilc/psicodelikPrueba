@@ -11,7 +11,7 @@ html {
 }
 
 /*tamaño texto*/
-.imgResponsive {
+.imgResponsive, #error404 img {
   width: 100%;
   height: auto;
 }
@@ -26,7 +26,7 @@ html {
   font-size: 2rem;
 }
 
-.imgResponsive {
+.imgResponsive, #error404 img {
   width: 100%;
   height: auto;
 }
@@ -407,6 +407,44 @@ legend {
 .redes a {
   margin: 0rem 3rem;
   text-decoration: none;
+}
+
+/*ERROR 404*/
+#error404 {
+  overflow-y: hidden;
+}
+#error404 h1 {
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  top: 40%;
+  left: 40%;
+  color: black;
+  font-size: 5rem;
+}
+#error404 img {
+  height: 100vh;
+}
+#error404 button {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: black;
+  border-color: #62FDFF;
+}
+#error404 button a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #62FDFF;
+}
+#error404 button:hover {
+  background-color: #62FDFF;
+  border-color: black;
+}
+#error404 button:hover a {
+  color: black;
 }
 
 /*GRADIENT*/

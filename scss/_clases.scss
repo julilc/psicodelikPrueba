@@ -369,7 +369,47 @@
 		margin: 0rem 3rem;
 		text-decoration: none;
 	}
+/*ERROR 404*/
+#error404 {
+	overflow-y: hidden;
 
+	h1{
+	position:absolute;  
+	text-align: center;
+	justify-content: center;
+	top: 40%;
+	left: 40%;
+	color: map-get($colors, primaryColor);
+	font-size: 5rem;
+	}
+	img{
+	@extend .imgResponsive;
+	height: 100vh;
+	}
+	button {
+		position: absolute;
+		top: 50%;
+		left: 44%;
+		padding: 2rem;
+		border-radius: 1rem;
+		background: map-get($colors, primaryColor);
+		border-color:map-get($colors, fColor); 
+		a{
+		font-size: 2rem;
+		text-decoration: none;
+		color: map-get($colors, fColor);
+		}
+		
+	}	
+	& button:hover {
+		background-color: map-get($colors, fColor);
+		border-color: map-get($colors, primaryColor);
+		a{
+		color:map-get($colors, primaryColor);
+		}
+	}	
+	
+}
 /*GRADIENT*/
 .fondo {
 background: rgb(253,253,253);
