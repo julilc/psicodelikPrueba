@@ -3432,10 +3432,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   /*CONTACTO*/
   .formularioContacto {
     font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
   }
 
   #Comentarios {
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 380px) {
