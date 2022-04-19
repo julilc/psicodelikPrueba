@@ -243,7 +243,12 @@
 .nav {
 		display: flex;
 		flex-direction: row;
+	ul li{
+		text-align: center;
+		width: 100%;
 	}
+	}
+
 }
 @media screen and (max-width: 624px) /*tablet*/ {
 	/*GENERAL*/

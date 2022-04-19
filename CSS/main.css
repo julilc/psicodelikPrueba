@@ -227,7 +227,7 @@ html {
   height: auto;
 }
 
-.laGaleriaText {
+.laGaleriaText, .textoDerecha {
   line-height: 4rem;
   font-size: 2.2rem;
   font-weight: 3rem;
@@ -250,7 +250,6 @@ html {
 .textoDerecha {
   width: 90%;
   margin-right: 0rem;
-  margin-right: 1rem;
 }
 
 .divSumergite {
@@ -3196,6 +3195,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     flex-direction: row;
   }
+  .nav ul li {
+    text-align: center;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 624px) {
   /*GENERAL*/
@@ -3273,7 +3276,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 50%;
   }
 
-  .laGaleriaText {
+  .laGaleriaText, .textoDerecha {
     display: none;
   }
 
@@ -3370,7 +3373,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 0%;
   }
 
-  .laGaleriaText {
+  .laGaleriaText, .textoDerecha {
     display: none;
   }
 
