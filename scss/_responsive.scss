@@ -430,14 +430,23 @@
 			margin: 1rem;
 			padding: 1rem;
 			width: 100%;
-			
+
 		}
 	#Comentarios {
 		width: 100%;
 	}
 
 }
+	/*ERROR 404*/
+	.error404{
+		h1{
+			left:20%;
+		}
+		button {
+			left:34%;
+		}
 
+	}
 @media screen and (max-width: 380px) /*fold*/{
 /*INICIO*/
 #titleNuestraHistoria {
@@ -487,4 +496,14 @@ height: 3.5rem;
 	width: 100%;
 }
 
+/*ERROR 404*/
+	.error404{
+		h1{
+			left:10%;
+		}
+		button {
+			left:24%;
+		}
+
+	}
 }
